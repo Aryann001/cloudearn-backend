@@ -10,7 +10,7 @@ dotenv.config({
 // Connecting the Database
 connectDB();
 
-app.get((req, res) => {
+app.get("/", (req, res) => {
   res.status(200).json({
     success: true,
   });
